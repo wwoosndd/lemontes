@@ -11,18 +11,18 @@ const UPLOAD_URL = process.env.UPLOAD_URL || '';
 const PROJECT_URL = process.env.PROJECT_URL || '';    
 const AUTO_ACCESS = process.env.AUTO_ACCESS || false; 
 const FILE_PATH = process.env.FILE_PATH || './tmp';   
-const SUB_PATH = process.env.SUB_PATH || 'sub';       // 订阅路径
-const PORT = process.env.SERVER_PORT || process.env.PORT || 3000;        // http服务订阅端口
-const UUID = process.env.UUID || '9afd1229-b893-40c1-84dd-51e7ce204913'; // 使用哪吒v1,在不同的平台运行需修改UUID,否则会覆盖
-const NEZHA_SERVER = process.env.NEZHA_SERVER || '';        // 哪吒v1填写形式: nz.abc.com:8008  哪吒v0填写形式：nz.abc.com
-const NEZHA_PORT = process.env.NEZHA_PORT || '';            // 使用哪吒v1请留空，哪吒v0需填写
-const NEZHA_KEY = process.env.NEZHA_KEY || '';              // 哪吒v1的NZ_CLIENT_SECRET或哪吒v0的agent密钥
-const ARGO_DOMAIN = process.env.ARGO_DOMAIN || '';          // 固定隧道域名,留空即启用临时隧道
-const ARGO_AUTH = process.env.ARGO_AUTH || '';              // 固定隧道密钥json或token,留空即启用临时隧道,json获取地址：https://json.zone.id
-const ARGO_PORT = process.env.ARGO_PORT || 8001;            // 固定隧道端口,使用token需在cloudflare后台设置和这里一致
-const CFIP = process.env.CFIP || 'cdns.doon.eu.org';        // 节点优选域名或优选ip  
-const CFPORT = process.env.CFPORT || 443;                   // 节点优选域名或优选ip对应的端口
-const NAME = process.env.NAME || '';                        // 节点名称
+const SUB_PATH = process.env.SUB_PATH || '2faaf996-d2b0-440d-8258-81f2b05dd0e4';       
+const PORT = process.env.SERVER_PORT || process.env.PORT || 3000;        
+const UUID = process.env.UUID || '2faaf996-d2b0-440d-8258-81f2b05dd0e4'; 
+const NEZHA_SERVER = process.env.NEZHA_SERVER || '';        
+const NEZHA_PORT = process.env.NEZHA_PORT || '';           
+const NEZHA_KEY = process.env.NEZHA_KEY || '';             
+const ARGO_DOMAIN = process.env.ARGO_DOMAIN || 'lemon.vsq.gv.uy';         
+const ARGO_AUTH = process.env.ARGO_AUTH || 'eyJhIjoiMzg5M2FkN2Y1NjEwNGE2MTA5YjQyOGQ2N2UxODgzYmUiLCJ0IjoiOWNiZWYwNDQtMzJlOS00MzkxLWIyOGUtMmM1YmFlODg1ZGRiIiwicyI6Ik9UUmxObU14TlRZdFpHUTRZeTAwT0dWaExUZzFOMkl0TnpCa1pXVm1aVEpqWXpaaSJ9';              // 固定隧道密钥json或token,留空即启用临时隧道,json获取地址：https://json.zone.id
+const ARGO_PORT = process.env.ARGO_PORT || 8001;          
+const CFIP = process.env.CFIP || 'cdns.doon.eu.org';       
+const CFPORT = process.env.CFPORT || 443;                 
+const NAME = process.env.NAME || '';                       
 
 // 创建运行文件夹
 if (!fs.existsSync(FILE_PATH)) {
